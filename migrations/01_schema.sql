@@ -12,7 +12,7 @@ CREATE TABLE users (
 
 CREATE TABLE properties (
   id SERIAL PRIMARY KEY NOT NULL,
-  owner id    INTEGER REFERENCES users(id) ON DELETE CASCADE,
+  owner id INTEGER REFERENCES users(id) ON DELETE CASCADE,
   title VARCHAR(255)
   description TEXT
   thumbnail_photo_url VARCHAR(255)
